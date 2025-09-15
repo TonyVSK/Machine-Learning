@@ -16,7 +16,7 @@ noise = np.random.uniform(low=0, high=10, size=(50, 2))
 X = np.vstack([X, noise])
 
 # 2. Aplicar - DBSCAN eps (ε) = 0.5 (raio da vizinhança), min_samples (MinPts) = 5
-dbscan = DBSCAN(eps=0.5, min_samples=5)
+dbscan = DBSCAN(eps=0.5, min_samples=20)
 labels = dbscan.fit_predict(X)
 
 # 3. Visualizar os resultados; ruído será marcado como -1 em preto
@@ -36,7 +36,7 @@ for k, col in zip(unique_labels, colors):
     mask = (labels == k)
     plt.scatter(X[mask, 0], X[mask, 1], c=[col], label=label_name, s=50)
 
-plt.title('Agrupamento de "Pessoas em uma Cidade" com DBSCAN\n(ε=0.5, MinPts=5)')
+plt.title('Pessoas em cidade\n(ε=0.5, MinPts=20)')
 plt.xlabel('Coordenada X')
 plt.ylabel('Coordenada Y')
 plt.legend()
