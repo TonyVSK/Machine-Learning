@@ -1,0 +1,45 @@
+Figura Distribuição de Clientes: Churn vs. Não Churn
+
+O resultado obtido foi totalmente desbablanceado, já que tem muito mais clientes que cancelaram o serviço do que aceitaram
+
+
+
+Figura de boxplot do Custo Diário Total por Churn
+
+Os clientes que deram churn = Sim tendem a ter custos diários médios mais altos, com uma dispersão maior nos valores. Portanto, é possivelmente
+imaginar que quanto maior gasto diário, mais propensos a cancelar estão, podendo ser por insatisfação em relação aos gastos.
+
+
+
+
+Figura da taxa de Churn por plano internacional
+
+É muito maior entre clientes com plano internacional (≈ 43%) do que entre clientes sem o plano, portanto o plano internacional É
+um valor extremamente relevante para o cancelamento
+
+
+
+
+Figura da contagem de Churn por número de chamadas de serviço
+
+Quanto mais chamadas de atendimento o cliente faz, maior a chance de churn. Ou seja, clientes que contatam o suporte várias vezes
+são mais propensos a cancelar, provavelmente por insatisfação
+
+
+
+
+
+
+Figura da distribuição de min diários por Churn
+
+Os clientes que cancelaram apresentam padrões de uso mais variados, onde temos alguns deles com mais minutos em média.
+conclui-se que clientes com mais uso podem achar que não vale a pena o gasto com o serviço oferecido
+
+
+
+
+Figura da Matriz de Confusão com o modelo Random Forest
+
+O modelo Random Forest obteve bom desempenho,  a maioria dos casos de “Não Churn” foram acertadas, com 807 acertos, e uma quantidade aceitável de “Churn” também, com 97 acertos.
+Evidentemente, os resultados não foram perfeitos, já que tivemos 48 falsos negativos:clientes que cancelaram, mas o modelo não conseguiu prever.
+Esses clientessão os mais críticos para a empresa, pois representam perdas imprevistas.
